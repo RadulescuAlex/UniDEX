@@ -1,6 +1,11 @@
 # expert-aplicatii
 
-## Project plan 
+## Team - github accounts:
+
+- [Suciu Tudor](https://github.com/Suciu532)
+- [Alex Radulescu](https://github.com/RadulescuAlex)
+
+### Project plan 
 
 - [ ] create a html document & a table;
 - [ ] add a menu for each field; 
@@ -9,7 +14,4 @@
 - [ ] edit and style in css;
 - [ ] add functionalities (add/edit btn);
 
-### Team - github accounts:
 
-- https://github.com/Suciu532
-- https://github.com/RadulescuAlex
