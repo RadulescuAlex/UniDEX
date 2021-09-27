@@ -11,5 +11,5 @@
 
 ### Team - github accounts:
 
-https://github.com/Suciu532
-https://github.com/RadulescuAlex
+- https://github.com/Suciu532
+- https://github.com/RadulescuAlex
