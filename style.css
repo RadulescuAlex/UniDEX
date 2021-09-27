@@ -1,0 +1,36 @@
+#top-menu-bar {
+  text-align: center;
+  background-color: #334455;
+  color: white;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+#top-menu-bar li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#top-menu-bar a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  margin: 2px 0;
+  border-radius: 0.2em;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+
+#top-menu-bar a:visited {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: none;
+  transition: border-color 1s ease;
+}
+#top-menu-bar a:hover,
+#top-menu-bar a.active {
+  color: #334455;
+  background: #fff;
+}
