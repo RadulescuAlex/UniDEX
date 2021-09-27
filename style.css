@@ -4,11 +4,12 @@
   color: white;
   margin: 0 0 10px 0;
   padding: 0;
+  border-radius: 20px;
 }
 
 #top-menu-bar li {
   display: inline;
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
 }
 
@@ -33,4 +34,13 @@
 #top-menu-bar a.active {
   color: #334455;
   background: #fff;
+}
+
+#li-search {
+  float: left;
+  margin: 6px;
+}
+
+#search {
+  border-radius: 8px;
 }
