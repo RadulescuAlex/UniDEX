@@ -1,0 +1,14 @@
+#top-menu-bar {
+    text-align: center;
+    background-color: #334455;
+    color: white;
+    margin: 0 0 10px 0;
+    padding: 0;
+    
+}
+
+#top-menu-bar li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
