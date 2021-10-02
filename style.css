@@ -44,3 +44,12 @@
 #search {
   border-radius: 8px;
 }
+
+.inLine {
+  display: -webkit-box;
+  margin-bottom: 10px;
+}
+
+.distanta {
+  padding-left: 5px;
+}
