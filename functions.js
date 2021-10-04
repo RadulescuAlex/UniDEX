@@ -1,7 +1,7 @@
 let allWords = [];
 
 function loadWords() {
-  fetch('data/data.json')
+  fetch('http://localhost:3000/words')
     .then(r => r.json())
     .then(words => {
       console.log("words: ", words);
@@ -15,8 +15,9 @@ loadWords();
 function getWordsAsHTML(words) {
   return words.map(word => {
     return `<div class="inLine">
-            <div>${word.Word}</div>
-            <div class="distanta">${word.Explication}</div>
+            <div>${word.word}</div>
+            = 
+            <div class="distanta">${word.explication}</div>
             </div>`
   }).join('');
 }
