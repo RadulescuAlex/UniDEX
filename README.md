@@ -11,10 +11,10 @@
 
 #### Project plan 
 
-- [ ] create a html document & a table;
-- [ ] add a menu for each field; 
-- [ ] add a search input in the table;
-- [ ] create a json file with data that will be shown on search;
+- [x] create a html document & a table;
+- [x] add a menu for each field; 
+- [x] add a search input in the table;
+- [x] create a json file with data that will be shown on search;
 - [ ] edit and style in css;
 - [ ] add functionalities (add/edit btn);
 
