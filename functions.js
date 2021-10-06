@@ -17,9 +17,16 @@ const API = {
     // // }
 };
 
-if (location.host === "radulescualex.github.io") {
+if (true || location.host === "radulescualex.github.io") {
   API.READ.URL ="data/data.json";
+  // API.CREATE.URL = "data/data.create";
+  // API.UPDATE.URL ="data/data.update";
+  // API.DELETE.URL ="data/data.delete";
+
   API.READ.METHOD = "GET";
+  // API.CREATE.METHOD = "GET";
+  // API.UPDATE.METHOD = "GET";
+  // API.DELETE.METHOD = "GET";
 }
 
 let allWords = [];
