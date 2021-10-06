@@ -1,7 +1,31 @@
+const API = {
+    // CREATE: {
+    //     URL:  "http://localhost:3000/words/create",
+    //     METHOD: "POST"
+    // },
+    READ: {
+        URL: "http://localhost:3000/words",
+        METHOD: "GET"
+    } //PUNE VIRGULA AICI
+    // // UPDATE: {
+    // //     URL: "http://localhost:3000/words/update",
+    // //     METHOD: "PUT"
+    // // },
+    // // DELETE: {
+    // //     URL: "http://localhost:3000/words/delete",
+    // //     METHOD: "DELETE" 
+    // // }
+};
+
+if (location.host === "RadulescuAlex.github.io") {
+  API.READ.URL ="data/data.json";
+  API.READ.METHOD = "GET";
+}
+
 let allWords = [];
 
 function loadWords() {
-  fetch('http://localhost:3000/words')
+  fetch(API.READ.URL)
     .then(r => r.json())
     .then(words => {
       console.log("words: ", words);
