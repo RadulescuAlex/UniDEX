@@ -17,7 +17,7 @@ const API = {
     // // }
 };
 
-if (location.host === "RadulescuAlex.github.io") {
+if (location.host === "radulescualex.github.io") {
   API.READ.URL ="data/data.json";
   API.READ.METHOD = "GET";
 }
