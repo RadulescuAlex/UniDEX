@@ -58,6 +58,24 @@ function displayWords(words) {
 
   document.getElementById('results').innerHTML = html;
 }
+ 
+function initMenu(id) {
+var oldLink = document.querySelector("a[data-page].active")
+  if (oldLink) {
+    oldLink.classList.remove("active");
+  }
+  var link = document.querySelector(`a[data-page=${id}]`);
+  link.classList.add('active');
+}
+
+document.querySelector('#top-menu-bar').addEventListener("click", e => {
+  const id = e.target.getAttribute("data-page");
+  if (e.target.matches("a")) {
+
+    // console.warn("click pe menu", id);
+  }
+  initMenu(id)
+})
 
 // fetch('data/data.json')
 //   .then(response => {return response.json()})
