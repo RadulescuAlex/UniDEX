@@ -1,32 +1,32 @@
 const API = {
-    // CREATE: {
-    //     URL:  "http://localhost:3000/words/create",
-    //     METHOD: "POST"
-    // },
+    CREATE: {
+        URL:  "http://localhost:3000/words/create",
+        METHOD: "POST"
+    },
     READ: {
         URL: "http://localhost:3000/words",
         METHOD: "GET"
-    } //PUNE VIRGULA AICI
-    // // UPDATE: {
-    // //     URL: "http://localhost:3000/words/update",
-    // //     METHOD: "PUT"
-    // // },
-    // // DELETE: {
-    // //     URL: "http://localhost:3000/words/delete",
-    // //     METHOD: "DELETE" 
-    // // }
+    },
+    UPDATE: {
+        URL: "http://localhost:3000/words/update",
+        METHOD: "PUT"
+    },
+    DELETE: {
+        URL: "http://localhost:3000/words/delete",
+        METHOD: "DELETE" 
+    }
 };
 
 if (true || location.host === "radulescualex.github.io") {
   API.READ.URL ="data/data.json";
-  // API.CREATE.URL = "data/data.create";
-  // API.UPDATE.URL ="data/data.update";
-  // API.DELETE.URL ="data/data.delete";
+  API.CREATE.URL = "data/data.create";
+  API.UPDATE.URL ="data/data.update";
+  API.DELETE.URL ="data/data.delete";
 
   API.READ.METHOD = "GET";
-  // API.CREATE.METHOD = "GET";
-  // API.UPDATE.METHOD = "GET";
-  // API.DELETE.METHOD = "GET";
+  API.CREATE.METHOD = "GET";
+  API.UPDATE.METHOD = "GET";
+  API.DELETE.METHOD = "GET";
 }
 
 let allWords = [];
