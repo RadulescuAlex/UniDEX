@@ -69,12 +69,12 @@ var oldLink = document.querySelector("a[data-page].active")
 }
 
 document.querySelector('#top-menu-bar').addEventListener("click", e => {
-  const id = e.target.getAttribute("data-page");
   if (e.target.matches("a")) {
-
+    const id = e.target.getAttribute("data-page");
+    initMenu(id)
     // console.warn("click pe menu", id);
   }
-  initMenu(id)
+  
 })
 
 // fetch('data/data.json')
