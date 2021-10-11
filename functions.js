@@ -31,8 +31,11 @@ if (location.host === "radulescualex.github.io") {
 
 let allWords = [];
 
-function loadWords() {
-  fetch(API.READ.URL)
+function loadWords(query) {
+  fetch(API.READ.URL + '?' + new URLSearchParams({
+    query: query || "",
+    domain: 'drept'
+}))
     .then(r => r.json())
     .then(words => {
       console.log("words: ", words);
@@ -75,6 +78,12 @@ document.querySelector('#top-menu-bar').addEventListener("click", e => {
     // console.warn("click pe menu", id);
   }
   
+})
+
+document.getElementById("search").addEventListener("input", e => {
+  const text = e.target.value.toLowerCase();
+  console.log('Cauta...: ', text);
+  loadWords(text);
 })
 
 
