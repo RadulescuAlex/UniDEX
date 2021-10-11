@@ -17,7 +17,7 @@ const API = {
     }
 };
 
-if (true || location.host === "radulescualex.github.io") {
+if (location.host === "radulescualex.github.io") {
   API.READ.URL ="data/data.json";
   API.CREATE.URL = "data/data.create";
   API.UPDATE.URL ="data/data.update";
@@ -45,11 +45,11 @@ loadWords();
 
 function getWordsAsHTML(words) {
   return words.map(word => {
-    return `<div class="inLine">
-            <div>${word.word}</div>
+    return `<span class="inLine">
+            <span>${word.word}</span>
             = 
-            <div class="distanta">${word.explication}</div>
-            </div>`
+            <span class="distanta">${word.explication}</span>
+            </span>`
   }).join('');
 }
 
