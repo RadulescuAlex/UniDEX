@@ -87,3 +87,28 @@ document.getElementById("search").addEventListener("input", e => {
 })
 
 
+function getWordValue() {
+  const word = documet.querySelector('[name=word]').value;
+  const explication = document.querySelector('[name=explication]').value
+  return{
+    word: word,
+    explication: explication
+  };
+}
+
+function saveWord(word) {
+  fetch("data/add-team.json", {
+    METHOD: "POST",
+    body: JSON.stringify(word)
+  })
+  .then(r => r.json())
+  .then(status =>{
+    console.warn('status after add', status);
+  })
+}
+
+function submitWord() {
+  const word = getWordValue();
+  console.warn('add this value in words.json', JSON.stringify(word))
+  saveWord(word);
+}
