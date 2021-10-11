@@ -77,18 +77,4 @@ document.querySelector('#top-menu-bar').addEventListener("click", e => {
   
 })
 
-// fetch('data/data.json')
-//   .then(response => {return response.json()})
-//   .then(data => appendData(data))
-//   .catch(function (err) {
-//   console.log('error: ' + err);});
-
-//   function appendData(data) {
-//     var mainContainer = document.getElementById("results");
-//     for (var i = 0; i < data.lengh; i++) {
-//         var div = document.createElement("div");
-//         div.innerHTML = data[i].Word + ' = ' + data[i].Explication;
-//         mainContainer.appendChild(div);
-//     }
-// }
 
