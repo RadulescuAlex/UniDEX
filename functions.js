@@ -31,8 +31,11 @@ if (true || location.host === "radulescualex.github.io") {
 
 let allWords = [];
 
-function loadWords() {
-  fetch(API.READ.URL)
+function loadWords(query) {
+  fetch(API.READ.URL + '?' + new URLSearchParams({
+    query: query || "",
+    domain: 'drept'
+}))
     .then(r => r.json())
     .then(words => {
       console.log("words: ", words);
@@ -77,24 +80,12 @@ document.querySelector('#top-menu-bar').addEventListener("click", e => {
   
 })
 
-function makeModal() {
-  var modal = document.getElementById("myModal");
-  var btn = document.getElementById("myBtn");
-  var span = document.getElementsByClassName("close")[0];
-  btn.onclick = function() {
-    modal.style.display = "block";
-  } 
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-}
+document.getElementById("search").addEventListener("input", e => {
+  const text = e.target.value.toLowerCase();
+  console.log('Cauta...: ', text);
+  loadWords(text);
+})
 
-makeModal();
 
 function getWordValue() {
   const word = documet.querySelector('[name=word]').value;
