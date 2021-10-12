@@ -17,7 +17,7 @@ const API = {
     }
 };
 
-if (location.host === "radulescualex.github.io") {
+if (true || location.host === "radulescualex.github.io") {
   API.READ.URL ="data/data.json";
   API.CREATE.URL = "data/data.create";
   API.UPDATE.URL ="data/data.update";
@@ -106,14 +106,20 @@ function getWordValue() {
 }
 
 function saveWord(word) {
-  fetch("data/add-team.json", {
+  fetch(API.CREATE.URL, {
     METHOD: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(word)
   })
   .then(r => r.json())
   .then(status =>{
     console.warn('status after add', status);
-  })
+    if (status.success) {
+      window.location.reload();
+    }
+    })
 }
 
 function submitWord() {
