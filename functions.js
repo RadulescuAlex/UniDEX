@@ -92,12 +92,20 @@ function saveWord(){
   const explication = document.querySelector('[name=explication]').value;
   
   const definiton = {
+function getWordValue() {
+  const word = document.querySelector('[name=word]').value;
+  const explication = document.querySelector('[name=explication]').value
+  return{
     word: word,
     explication: explication
   }
   console.warn('add this value in team json', definiton)
   return false;
 
+function submitWord() {
+  const word = getWordValue();
+  // console.warn('add this value in words.json', JSON.stringify(word));
+  saveWord(word);
 }
 
 function makeModal() {
