@@ -92,32 +92,45 @@ loadWords(text);
 function getWordValue() {
 const word = document.querySelector('[name=word]').value;
 const explication = document.querySelector('[name=explication]').value;
-return {
+
+ return {
   word: word,
   explication: explication
-};
+  };
 }
 
+// function saveWord(word) {
+// fetch('http://localhost:3000/words/create', {
+//   METHOD: "POST",
+//   headers: {
+//     "Content-Type": "application/json"
+//   },
+//   body: JSON.stringify(word)
+// })
+// .then(r => r.json())
+// .then(status =>{
+//   console.warn('status after add', status);
+//   if (status.success) {
+//     window.location.reload();
+//   }
+//   })
+// }
+
 function saveWord(word) {
-fetch('http://localhost:3000/words/create', {
-  METHOD: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify(word)
-})
-.then(r => r.json())
-.then(status =>{
-  console.warn('status after add', status);
-  if (status.success) {
-    window.location.reload();
-  }
+  fetch("data/add-words&explication.json", {
+    method: "POST",
+    body: JSON.stringify(word)
   })
+    .then(r => r.json())
+    .then(status => {
+      console.warn('status after add ', status);
+    })
 }
 
 function submitWord() {
 const word = getWordValue();
-// console.warn('add this value in words.json', JSON.stringify(word));
+console.warn('add this value in words.json', JSON.stringify(word));
+
 saveWord(word);
 }
 
