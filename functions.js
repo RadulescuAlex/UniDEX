@@ -52,6 +52,9 @@ function getWordsAsHTML(words) {
             <span>${word.word}</span>
             = 
             <span class="distanta">${word.explication}</span>
+            <span class="buttons">
+            <span><button type="submit"><i class="fas fa-trash-alt"></i></button></span>
+            <span><button type="submit"><i class="fas fa-edit"></i></button></span></span>
             </span>`
   }).join('');
 }
@@ -88,15 +91,15 @@ document.getElementById("search").addEventListener("input", e => {
 
 function getWordValue() {
   const word = document.querySelector('[name=word]').value;
-  const explication = document.querySelector('[name=explication]').value
-  return{
+  const explication = document.querySelector('[name=explication]').value;
+  return {
     word: word,
     explication: explication
   };
 }
 
 function saveWord(word) {
-  fetch(API.CREATE.URL, {
+  fetch('http://localhost:3000/words/create', {
     METHOD: "POST",
     headers: {
       "Content-Type": "application/json"
