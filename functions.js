@@ -19,9 +19,9 @@ const API = {
 
 if ( location.host === "radulescualex.github.io") {
   API.READ.URL ="data/data.json";
-  API.CREATE.URL = "data/data.create";
-  API.UPDATE.URL ="data/data.update";
-  API.DELETE.URL ="data/data.delete";
+  API.CREATE.URL = "data/create.json";
+  API.UPDATE.URL ="data/update.json";
+  API.DELETE.URL ="data/delete.json";
 
   API.READ.METHOD = "GET";
   API.CREATE.METHOD = "GET";
@@ -87,36 +87,17 @@ document.getElementById("search").addEventListener("input", e => {
 })
 
 
-function getWordValue() {
-  const word = documet.querySelector('[name=word]').value;
-  const explication = document.querySelector('[name=explication]').value
-  return{
+function saveWord(){
+  const word = document.querySelector('[name=word]').value;
+  const explication = document.querySelector('[name=explication]').value;
+  
+  const definiton = {
     word: word,
     explication: explication
-  };
-}
+  }
+  console.warn('add this value in team json', definiton)
+  return false;
 
-function saveWord(word) {
-  fetch(API.CREATE.URL, {
-    METHOD: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(word)
-  })
-  .then(r => r.json())
-  .then(status =>{
-    console.warn('status after add', status);
-    if (status.success) {
-      window.location.reload();
-    }
-    })
-}
-
-function submitWord() {
-  const word = getWordValue();
-  console.warn('add this value in words.json', JSON.stringify(word))
-  saveWord(word);
 }
 
 function makeModal() {
