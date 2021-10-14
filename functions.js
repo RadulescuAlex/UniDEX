@@ -100,23 +100,6 @@ const domain = document.querySelector("[class=drept]").innerText.toLocaleLowerCa
   };
 }
 
-// function saveWord(word) {
-// fetch('http://localhost:3000/words/create', {
-//   METHOD: "POST",
-//   headers: {
-//     "Content-Type": "application/json"
-//   },
-//   body: JSON.stringify(word)
-// })
-// .then(r => r.json())
-// .then(status =>{
-//   console.warn('status after add', status);
-//   if (status.success) {
-//     window.location.reload();
-//   }
-//   })
-// }
-
 function saveWord(word) {
   fetch(API.CREATE.URL, {
     method: "POST",
@@ -128,6 +111,9 @@ function saveWord(word) {
     .then(r => r.json())
     .then(status => {
       console.warn('status after add ', status);
+      if(status.success) {
+        window.location.reload();
+      }
     })
 }
 
