@@ -92,10 +92,11 @@ loadWords(text);
 function getWordValue() {
 const word = document.querySelector('[name=word]').value;
 const explication = document.querySelector('[name=explication]').value;
-
+const domain = document.querySelector("[class=drept]").innerText.toLocaleLowerCase();
  return {
   word: word,
-  explication: explication
+  explication: explication,
+  domain: domain
   };
 }
 
@@ -117,8 +118,11 @@ const explication = document.querySelector('[name=explication]').value;
 // }
 
 function saveWord(word) {
-  fetch("data/add-words&explication.json", {
+  fetch(API.CREATE.URL, {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(word)
   })
     .then(r => r.json())
