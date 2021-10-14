@@ -13,13 +13,15 @@
     <span id="li-search">
         <input type="text" placeholder="Search" id="search"><label for="search"></label>
     </span>
-    <form onsubmit="submitWord(); return false;">
+    
     <ul id="top-menu-bar">
         <li id="element-list"><a href="#" data-page="Drept">Drept</a></li>
         <li id="element-list"><a href="#" data-page="Medicina">Medicină</a></li>
         <li id="element-list"><a href="#" data-page="Inginerie">Inginerie</a></li>
         <li id="element-list"><a href="#" data-page="Litere">Litere</a></li>
     </ul>
+
+    <form onsubmit="submitWord(); return false;">
     <button id="myBtn">Add data</button>
     <div id="myModal" class="modal">
       <div class="modal-content">
@@ -29,10 +31,9 @@
         <div id="input-explication"><input type="text" required name="explication" placeholder="Explication"></div>
         <div><button id ="btn-submit" type="submit">Add</button></div>
       </div>
-    
     </div>
+  </form>
     <div id="results"></div>
-    </form>
     <script src="functions.js"></script>
 </body>
 

@@ -86,9 +86,8 @@ document.getElementById("search").addEventListener("input", e => {
   loadWords(text);
 })
 
-
 function getWordValue() {
-  const word = documet.querySelector('[name=word]').value;
+  const word = document.querySelector('[name=word]').value;
   const explication = document.querySelector('[name=explication]').value
   return{
     word: word,
@@ -115,7 +114,7 @@ function saveWord(word) {
 
 function submitWord() {
   const word = getWordValue();
-  console.warn('add this value in words.json', JSON.stringify(word))
+  // console.warn('add this value in words.json', JSON.stringify(word));
   saveWord(word);
 }
 
