@@ -135,7 +135,7 @@ function saveWord(word) {
 }
 
 function deleteWord(id) {
-  fetch("http://localhost:3000/teams/delete", {
+  fetch("http://localhost:3000/words/delete", {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
@@ -145,7 +145,7 @@ function deleteWord(id) {
     .then((r) => r.json())
     .then((status) => {
       if (status.success) {
-        loadTeams();
+        loadWords();
       }
     });
 }
@@ -177,6 +177,9 @@ function makeModal() {
 makeModal();
 loadWords();
 
-document.querySelector("#explication").addEventListener("click", (e) => {
-  console.warn("click", e);
+document.querySelector("#results").addEventListener("click", (e) => {
+  if (e.target.matches("a.delete-btn")) {
+    const id = e.target.getAttribute("data-id");
+    deleteWord(id)
+  }
 });
