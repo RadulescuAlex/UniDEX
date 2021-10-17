@@ -57,7 +57,7 @@ function getWordsAsHTML(words) {
             = 
             <span class="distanta">${word.explication}</span>
             <span class="buttons">
-            <span><a href="#" class="delete-btn" data-id="${word.id}">&#10006;</a></span>
+            <span><a id="explication" href="#" class="delete-btn" data-id="${word.id}">&#10006;</a></span>
             <span><a href="#" class="edit-btn" data-id="${word.id}">&#9998;</a></span>
             </div>`;
     })
@@ -173,5 +173,10 @@ function makeModal() {
     }
   };
 }
+
 makeModal();
 loadWords();
+
+document.querySelector("#explication").addEventListener("click", (e) => {
+  console.warn("click", e);
+});
