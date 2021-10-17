@@ -1,102 +1,119 @@
 const API = {
   CREATE: {
-      URL:  "http://localhost:3000/words/create",
-      METHOD: "POST"
+    URL: "http://localhost:3000/words/create",
+    METHOD: "POST",
   },
   READ: {
-      URL: "http://localhost:3000/words",
-      METHOD: "GET"
+    URL: "http://localhost:3000/words",
+    METHOD: "GET",
   },
   UPDATE: {
-      URL: "http://localhost:3000/words/update",
-      METHOD: "PUT"
+    URL: "http://localhost:3000/words/update",
+    METHOD: "PUT",
   },
   DELETE: {
-      URL: "http://localhost:3000/words/delete",
-      METHOD: "DELETE" 
-  }
+    URL: "http://localhost:3000/words/delete",
+    METHOD: "DELETE",
+  },
 };
 
-if ( location.host === "radulescualex.github.io") {
-API.READ.URL ="data/data.json";
-API.CREATE.URL = "data/data.create";
-API.UPDATE.URL ="data/data.update";
-API.DELETE.URL ="data/data.delete";
+if (location.host === "radulescualex.github.io") {
+  API.READ.URL = "data/data.json";
+  API.CREATE.URL = "data/data.create";
+  API.UPDATE.URL = "data/data.update";
+  API.DELETE.URL = "data/data.delete";
 
-API.READ.METHOD = "GET";
-API.CREATE.METHOD = "GET";
-API.UPDATE.METHOD = "GET";
-API.DELETE.METHOD = "GET";
+  API.READ.METHOD = "GET";
+  API.CREATE.METHOD = "GET";
+  API.UPDATE.METHOD = "GET";
+  API.DELETE.METHOD = "GET";
 }
 
 let allWords = [];
+let currentDomain = null;
 
 function loadWords(query) {
-fetch(API.READ.URL + '?' + new URLSearchParams({
-  query: query || "",
-  domain: 'drept'
-}))
-  .then(r => r.json())
-  .then(words => {
-    console.log("words: ", words);
-    allWords = words;
-    displayWords(words);
-  })
+  fetch(
+    API.READ.URL +
+      "?" +
+      new URLSearchParams({
+        query: query || "",
+        domain: "drept",
+      })
+  )
+    .then((r) => r.json())
+    .then((words) => {
+      console.log("words: ", words);
+      allWords = words;
+      displayWords(words);
+    });
 }
 
-loadWords();
-
 function getWordsAsHTML(words) {
-  return words.map(word => {
-    return `<span class="inLine">
+  return words
+    .map((word) => {
+      return `<span class="inLine">
             <span>${word.word}</span>
             = 
             <span class="distanta">${word.explication}</span>
             <span class="buttons">
             <span><button type="submit"><i class="fas fa-trash-alt"></i></button></span>
             <span><button type="submit"><i class="fas fa-edit"></i></button></span></span>
-            </span>`
-  }).join('');
+            </span>`;
+    })
+    .join("");
 }
 
 function displayWords(words) {
-const html = getWordsAsHTML(words);
+  const html = getWordsAsHTML(words);
 
-document.getElementById('results').innerHTML = html;
+  document.getElementById("results").innerHTML = html;
 }
 
 function initMenu(id) {
-var oldLink = document.querySelector("a[data-page].active")
-if (oldLink) {
-  oldLink.classList.remove("active");
-}
-var link = document.querySelector(`a[data-page=${id}]`);
-link.classList.add('active');
-}
-
-document.querySelector('#top-menu-bar').addEventListener("click", e => {
-if (e.target.matches("a")) {
-  const id = e.target.getAttribute("data-page");
-  initMenu(id)
-  // console.warn("click pe menu", id);
+  var oldLink = document.querySelector("a[data-page].active");
+  if (oldLink) {
+    oldLink.classList.remove("active");
+  }
+  var link = document.querySelector(`a[data-page=${id}]`);
+  link.classList.add("active");
 }
 
-})
+document.querySelector("#top-menu-bar").addEventListener("click", (e) => {
+  if (e.target.matches("a")) {
+    const id = e.target.getAttribute("data-page");
+    initMenu(id);
+  }
+});
 
-document.getElementById("search").addEventListener("input", e => {
-const text = e.target.value.toLowerCase();
-console.log('Cauta...: ', text);
-loadWords(text);
-})
+document.getElementById("search").addEventListener("input", (e) => {
+  const text = e.target.value.toLowerCase();
+  console.log("Cauta...: ", text);
+  loadWords(text);
+});
+
+function getClickedValue() {
+  document
+    .querySelector("#top-menu-bar")
+    .addEventListener("click", function (e) {
+      if (e.target.matches("a")) {
+        var d = e.target.getAttribute("data-page").toLowerCase();
+        console.log("butonul apasat este: ", d);
+        currentDomain = d;
+      }
+    });
+}
+
+getClickedValue();
 
 function getWordValue() {
-const word = document.querySelector('[name=word]').value;
-const explication = document.querySelector('[name=explication]').value;
-const domain = document.querySelector("[class=drept]").innerText.toLocaleLowerCase();
- return {
-  word: word,
-  explication: explication,
-  domain: domain
+  const word = document.querySelector("[name=word]").value;
+  const explication = document.querySelector("[name=explication]").value;
+  const domain = currentDomain;
+  return {
+    word: word,
+    explication: explication,
+    domain: domain,
   };
 }
 
@@ -104,41 +121,48 @@ function saveWord(word) {
   fetch(API.CREATE.URL, {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify(word)
+    body: JSON.stringify(word),
   })
-    .then(r => r.json())
-    .then(status => {
-      console.warn('status after add ', status);
-      if(status.success) {
+    .then((r) => r.json())
+    .then((status) => {
+      console.warn("status after add ", status);
+      if (status.success) {
         window.location.reload();
       }
-    })
+    });
 }
 
 function submitWord() {
-const word = getWordValue();
-console.warn('add this value in words.json', JSON.stringify(word));
+  const word = getWordValue();
+  console.warn("add this value in words.json", JSON.stringify(word));
 
-saveWord(word);
+  saveWord(word);
 }
 
 function makeModal() {
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-} 
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("myBtn");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function () {
+    modal.style.display = "block";
+  };
+  span.onclick = function () {
     modal.style.display = "none";
-  }
-}
+  };
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 }
 
+document.querySelector('#list tbody').addEventListener("click", e => {
+  if (e.target.matches("a.delete-btn")) {
+    const id = e.target.getAttribute("data-id");
+    deleteTeam(id);
+  }
+
 makeModal();
+loadWords();
