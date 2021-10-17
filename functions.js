@@ -52,14 +52,14 @@ function loadWords(query) {
 function getWordsAsHTML(words) {
   return words
     .map((word) => {
-      return `<span class="inLine">
+      return `<div class="inLine">
             <span>${word.word}</span>
             = 
             <span class="distanta">${word.explication}</span>
             <span class="buttons">
-            <span><button type="submit"><i class="fas fa-trash-alt"></i></button></span>
-            <span><button type="submit"><i class="fas fa-edit"></i></button></span></span>
-            </span>`;
+            <span><a href="#" class="delete-btn" data-id="${word.id}">&#10006;</a></span>
+            <span><a href="#" class="edit-btn" data-id="${word.id}">&#9998;</a></span>
+            </div>`;
     })
     .join("");
 }
@@ -134,6 +134,22 @@ function saveWord(word) {
     });
 }
 
+function deleteWord(id) {
+  fetch("http://localhost:3000/teams/delete", {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ id }),
+  })
+    .then((r) => r.json())
+    .then((status) => {
+      if (status.success) {
+        loadTeams();
+      }
+    });
+}
+
 function submitWord() {
   const word = getWordValue();
   console.warn("add this value in words.json", JSON.stringify(word));
@@ -157,12 +173,5 @@ function makeModal() {
     }
   };
 }
-
-document.querySelector('#list tbody').addEventListener("click", e => {
-  if (e.target.matches("a.delete-btn")) {
-    const id = e.target.getAttribute("data-id");
-    deleteTeam(id);
-  }
-
 makeModal();
 loadWords();
