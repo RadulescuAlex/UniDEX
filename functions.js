@@ -82,6 +82,9 @@ document.querySelector("#top-menu-bar").addEventListener("click", (e) => {
   if (e.target.matches("a")) {
     const id = e.target.getAttribute("data-page");
     initMenu(id);
+    domain = e.target.getAttribute("data-page");
+        console.log("butonul apasat este: ", domain);
+        loadWords("", domain);
   }
 });
 
@@ -90,20 +93,6 @@ document.getElementById("search").addEventListener("input", (e) => {
   console.log("Cauta...: ", text);
   loadWords(text, domain);
 });
-
-function getClickedValue() {
-  document
-    .querySelector("#top-menu-bar")
-    .addEventListener("click", function (e) {
-      if (e.target.matches("a")) {
-        domain = e.target.getAttribute("data-page");
-        console.log("butonul apasat este: ", domain);
-        loadWords("", domain);
-      }
-    });
-}
-
-getClickedValue();
 
 function getWordValue() {
   const word = document.querySelector("[name=word]").value;
@@ -174,8 +163,10 @@ function makeModal() {
   };
 }
 
+initMenu(domain)
 makeModal();
 loadWords("", domain);
+
 
 document.querySelector("#results").addEventListener("click", (e) => {
   if (e.target.matches("a.delete-btn")) {
