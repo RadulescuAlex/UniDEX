@@ -30,15 +30,15 @@ if (location.host === "radulescualex.github.io") {
 }
 
 let allWords = [];
-let currentDomain = null;
+let domain = "drept";
 
-function loadWords(query) {
+function loadWords(query, domain) {
   fetch(
     API.READ.URL +
       "?" +
       new URLSearchParams({
         query: query || "",
-        domain: "drept",
+        domain,
       })
   )
     .then((r) => r.json())
@@ -89,7 +89,7 @@ document.querySelector("#top-menu-bar").addEventListener("click", (e) => {
 document.getElementById("search").addEventListener("input", (e) => {
   const text = e.target.value.toLowerCase();
   console.log("Cauta...: ", text);
-  loadWords(text);
+  loadWords(text, domain);
 });
 
 function getClickedValue() {
@@ -97,9 +97,9 @@ function getClickedValue() {
     .querySelector("#top-menu-bar")
     .addEventListener("click", function (e) {
       if (e.target.matches("a")) {
-        var d = e.target.getAttribute("data-page").toLowerCase();
-        console.log("butonul apasat este: ", d);
-        currentDomain = d;
+        domain = e.target.getAttribute("data-page");
+        console.log("butonul apasat este: ", domain);
+        loadWords("", domain);
       }
     });
 }
@@ -109,7 +109,6 @@ getClickedValue();
 function getWordValue() {
   const word = document.querySelector("[name=word]").value;
   const explication = document.querySelector("[name=explication]").value;
-  const domain = currentDomain;
   return {
     word: word,
     explication: explication,
@@ -129,8 +128,9 @@ function saveWord(word) {
     .then((status) => {
       console.warn("status after add ", status);
       if (status.success) {
-        loadWords();
-        document.querySelector('form').reset();
+        //TODO send query
+        loadWords("", domain);
+        document.querySelector("form").reset();
       }
     });
 }
@@ -146,7 +146,7 @@ function deleteWord(id) {
     .then((r) => r.json())
     .then((status) => {
       if (status.success) {
-        loadWords();
+        loadWords("", domain);
       }
     });
 }
@@ -181,6 +181,6 @@ loadWords();
 document.querySelector("#results").addEventListener("click", (e) => {
   if (e.target.matches("a.delete-btn")) {
     const id = e.target.getAttribute("data-id");
-    deleteWord(id)
+    deleteWord(id);
   }
 });
