@@ -129,7 +129,8 @@ function saveWord(word) {
     .then((status) => {
       console.warn("status after add ", status);
       if (status.success) {
-        window.location.reload();
+        loadWords();
+        document.querySelector('form').reset();
       }
     });
 }
