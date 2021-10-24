@@ -9,7 +9,7 @@
 
 ## Live Preview
 
-- [Demo](https://radulescualex.github.io/expert-aplicatii/)
+- [Demo](https://radulescualex.github.io/UniDEX/)
 
 ## Structure
 
