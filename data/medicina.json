@@ -1,18 +1,103 @@
 [
 
     {
-        "word": "pelvis",
-        "explication": "ceva" 
+        "word": "Absorbția intestinală",
+        "explication": "proces fiziologic complex prin care produsii finali de digestie, apa, sărurile minerale și vitaminele sau alte substanțe (cum ar fi medicamentele) trec prin mucoasa intestinală și ajung in mediul intern (în sânge sau în limfă)." 
+    },
+    
+    {
+        "word": "Abdomen ",
+        "explication": "partea corpului la om și la mamifere cuprinsă între pelvis și cutia toracică. Funcțional, în interiorul abdomenului se află cea mai mare parte a organelor ce se ocupă cu digestia și absorbția alimentelor. " 
+    },
+
+    
+    {
+        "word": "Pelvis ",
+        "explication": "derivat din cuvântul latin pentru „bazin”, este o structură anatomică sub formă de pâlnie, întâlnită la cele mai multe vertebrate." 
     },
 
     {
-        "word": "Drept obiectiv",
-        "explication": "Dreptul obiectiv desemnează totalitatea regulilor juridice de conduită sau anormelor juridice din societate. El reprezintă totalitatea normelor de conduită instituite deorganele statului şi impuse indivizilor sau colectivităţii în cadrul vieţii sociale, uneori chiarprin forţa de constrângere a statului."
+        "word": "Cutie toracică",
+        "explication": "parte din schelet, format din coaste, stern și o parte din coloana vertebrală. Cavitatea interioară formată de thorax se numește în latină Cavum thoracis. În cavitatea toracică se află ca organe principale inima și pulmonul (plămânul). Cavitatea toracică este separată de cavitatea abdominală prin diafragmă, care este mușchiul respirator principal." 
     },
-
+    
     {
-        "word": "cuvant 2",
-        "explication": "explicatie2 ."
+        "word": "Acid ascorbic",
+        "explication": "acid organic cu proprietăți antioxidante. Apare sub forma unei pudre sau unor cristale albe spre galben deschis. Este solubil în apă. Enantiomerul L al acidului ascorbic este cunoscut sub numele comun de vitamina C." 
+    },
+    
+    {
+        "word": "Acid pangamic",
+        "explication": "ester care se extrage din germenii și tărâța de orez, din semințele de cais precum și din drojdia de bere. Acidul pangamic, cunoscut și ca vitamina B15 are rolul de activare a proceselor metabolice oxidative la nivel celular, are efect detoxifiant și de refacere a respirației celulare." 
+    },
+    
+    {
+        "word": "Boala infectioasa",
+        "explication": "(boală contagioasă, boală comunicabilă, boală transmisibilă, boală infecto-contagioasă, boală molipsitoare), este cauzată de un agent biologic (virus, bacterie, parazit mono sau multicelular, ciupercă, insectă, sau prion - un peptid, o fracțiune de proteină) față de care organismul atacat, în cadrul unui complex de împrejurări, nu este capabil să se apere. Bolile infecțioase afectează omul, animalele, plantele, insectele, chiar și bacteriile (viruși bacterieni). Ele pătrund în corp prin anumite „porți de intrare”, fiind transmise direct, de la persoană la persoană, sau prin vectori." 
+    },
+    
+    {
+        "word": "Vase capilare",
+        "explication": "cele mai mici vase sangvine din sistemul circulator. Având grosimea de o singură celulă, ele realizează schimbul de substanțe dintre sânge și țesuturi. În diametru au circa 5-10 μm. Contactul dintre capilare și vene sau artere nu se face direct, ci prin intermediul venulelor (între vene și capilare) și a arteriolelor (între artere și capilare)." 
+    },
+    
+    {
+        "word": "Deltoid",
+        "explication": "mușchi așezat în regiunea umărului, fiind situat imediat sub piele. Este cel mai superficial și mai voluminos dintre mușchii umărului. Are formă triunghiulară, cu baza în sus și vârful în jos, și acoperă articulația scapulohumerală anterior, posterior, superior și lateral. El dă forma rotunjită a umărului, formând în partea laterală relieful lui. Este un mușchi cărnos, gros cu fibrele convergente inferior." 
+    },
+    
+    {
+        "word": "Dislexia ",
+        "explication": "deficit de un anume grad, în recunoașterea și înțelegerea textelor scrise de mână sau tipărite. Totodată prezintă o lecturare lentă, greoaie, cu poticniri și chiar blocaje în citire. Această deficiență poate fi sesizată în jurul vârstei de 6-7 ani, când apare de asemenea și însușirea cititului. Copilul evită lecturarea și ezită să citească cu voce tare. Dislexia este o deficiență de învățare frecventă care împiedică dezvoltarea capacității de a citi. Cititul nu este un act primordial la om. El trebuie învățat. Pacienții cu dislexie nu au un nivel mai scăzut de inteligență și nu învață mai greu alte lucruri în afară de citit. Totuși, incapacitatea de a citi repede sau fluent poate face multe arii de studiu greu de urmat." 
+    },
+    
+    {
+        "word": "Electrocardiograma ",
+        "explication": "înregistrare a activității electrice a fibrelor musculare ale inimii. Fiecare contracție a miocardului este urmarea unei excitații electrice care provine de la nodulul sinusal și transmis musculaturii inimii. Aceste modificări ale potențialelor electrice ale inimii se pot măsura la suprafața organismului, fiind prezentate printr-o imagine repetată a activității cardiace electrice. Cu ajutorul electrocardiogramei se pot enunța o serie de proprietăți și boli ale inimii." 
+    },
+    
+    {
+        "word": "Fimoza ",
+        "explication": "afecțiune medicală ce împiedică retragerea completă a prepuțului la baza glandului la băieți sau la persoane adulte." 
+    },
+    
+    {
+        "word": "Farmacopee ",
+        "explication": "manual utilizat în practica farmaceutică. Acesta cuprinde substanțele medicamentoase și excipienții care intră în compoziția medicamentelor, formulele de preparare și conservare, cât și îndrumările privind întrebuințarea, controlul calității și purității medicamentelor. Fiecare descriere a unui produs se numește monografie. " 
+    },
+    
+    {
+        "word": "Ginecologie ",
+        "explication": "ramura medicinei care se ocupă cu fiziologia și tratarea afecțiunilor aparatului genital feminin." 
+    },
+    
+    {
+        "word": "Hematologie ",
+        "explication": "ramura medicinei interne care se ocupă cu sângele, organele care îl produc și bolile acestuia. Hematologia include studiul etiologiei, diagnosticării, tratării, identificării posibilelor complicații si profilaxiei bolilor sangvine. Medicul de laborator este cel care realizează toate testele necesare studiului sângelui." 
+    },
+    
+    {
+        "word": "Infarct miocardic",
+        "explication": "întreruperea fluxului sangvin la nivelul unei porțiuni a cordului, ce determină moartea celulelor miocardice. Cel mai frecvent se produce prin obstrucția unei artere coronare în urma rupturii unei plăci de aterom, care este un depozit de lipide și celule albe (în special macrofage) la nivelul peretelui arterial. Ischemia (reducerea fluxului sangvin) și hipoxia rezultate, netratate în timp util, duc la moartea (necroza) mușchiului inimii (miocardului)." 
+    },
+    
+    {
+        "word": "Neuron ",
+        "explication": "clasă de celule specifice pentru sistemul nervos. Neuronul este, de fapt, o celulă adaptată la recepționarea și transmiterea informației, unitatea elementară (celulară), embriologică, anatomică, funcțională, trofică și metabolică a sistemului nervos." 
+    },
+    
+    {
+        "word": "Ibuprofen ",
+        "explication": "antiinflamator nesteroidian din clasa derivaților de acid propionic, utilizat ca antiinflamator,analgezic și antipiretic. " 
+    },
+    
+    {
+        "word": "Patologia ",
+        "explication": "partea medicinei care se ocupă cu etiologia (cauzele), patogeneza (fenomenele, mecanismele patologice) de decurgere a bolii, mai precis cu simptomele (semnele) sau grupului de simptome (sindroame) a bolii, precum și urmările acestora asupra organismului." 
+    },
+    
+    {
+        "word": "Antebrat",
+        "explication": "partea intermediară a membrului superior uman, localizat între cot și încheietura mâinii." 
     }
-
 ]

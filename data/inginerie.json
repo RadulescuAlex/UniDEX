@@ -1,6 +1,97 @@
 [
+   
     {
-        "word": "wut", 
-        "explication": "ce?"
+        "word": "Armatura ",
+        "explication": "bara, de regula din otel, folosita pentru armarea betonului.Betonul are rezistenta mica la intindere, ca urmare armatura se dispune de regula in zonele intinse pentru a prelua eforturile de intindere (armatura longitudinala). Barele de armatura se pot dispune si in zonele comprimate sau supuse la forta taietoare, iar in cazul etrierilor ele asigura rolul de confinare." 
+    },
+    
+    {
+        "word": "Aderenta ",
+        "explication": "efectul prin care mortarul dezvolta o rezistenta la intindere la suprafata de contact cu blocurile de zidarie." 
+    },
+    
+    {
+        "word": "Beton ",
+        "explication": "material preparat din ciment, agregate (nisip si pietris), apa si aditivi (in special in cazul betonului preparat la statie)" 
+    },
+    
+    {
+        "word": "Capacitate portanta",
+        "explication": "sarcina maxima pe care o poate prelua un sistem constructiv sau un element de constructie." 
+    },
+    
+    {
+        "word": "Carbonatarea betonului",
+        "explication": "proces de reactie a pietrei de ciment cu dioxidul de carbon (CO2) in timp, care conduce la scaderea alcalinitatii betonului, prin trasformarea hidroxidului de calciu [Ca(OH)2] in carbonat de calciu (CaCO3)." 
+    },
+    
+    {
+        "word": "Confinarea betonului",
+        "explication": "amplasarea perimetrala a armaturii in sectiunea de beton in vederea limitarii deformatiilor transversale ale elementului de constructie." 
+    },
+    
+    {
+        "word": "Cota de fundare",
+        "explication": "distanta masurata de la nivelul terenului pana la partea cea mai de jos a fundatiei (talpa fundatiei)." 
+    },
+    {
+        "word": "Liant ",
+        "explication": "material natural sau artificial care au proprietatea de a lega intre ele materialele granulare in vederea obtinerii unor conglomerate artificiale." 
+    },
+    
+    {
+        "word": "Lucrabilitate ",
+        "explication": "masura a consistentei (vascozitatii) betonului prospat care se masoara prin utilizarea asa numitului con de tasare; o fluiditate mai mare usureaza pomparea si inglobarea armaturilor, iar una mai scazuta duce in general la rezistente mai mari." 
+    },
+    
+    {
+        "word": "Sprit ",
+        "explication": "primul strat al tencuielii realizat din mortar fluid (consistenta 11-13 cm). Spritul (denumit si strat de amorsa) trebuie sa asigure o aderenta foarte buna la stratul suport." 
+    },
+    
+    {
+        "word": "Rost de lucru",
+        "explication": "zona aparuta ca urmare a intreruperii betonarii, pentru care exista reguli de plasare (in functie de elementul de constructie). Inainte de reluarea betonarii, aceste zone se prelucreaza pentru asigurarea aderentei cu stratul de beton urmator." 
+    },
+    
+    {
+        "word": "Pardoseala ",
+        "explication": "element de constructie interior cu rol de asigurare a unei suprafete pentru circulatie." 
+    },
+    
+    {
+        "word": "Normativ in constructii",
+        "explication": "set de reguli si prevederi obligatorii, stabilite pe categorii de lucrari (de exemplu: pentru producerea betonului)." 
+    },
+    
+    {
+        "word": "Permeabilitatea betonului",
+        "explication": "proprietate a betonului de a lasa sa treaca prin el apa, aer, radiatii etc. Cu cat permeabilitatea betonului la apa este mai mica, cu atat rezistenta lui la inghet/dezghet, penetrare agenti externi s.a. este mai mare. De regula, cantitatea mai mare de ciment si raportul apa/ciment mai mic conduc la micsorarea permeabilitatii (in conditiile punerii in opera corecte a betonului)." 
+    },
+    
+    {
+        "word": "Inginer ",
+        "explication": "persoană cu o pregătire tehnică - teoretică și practică, obținută într-un institut de învățământ superior, care practică ingineria. Spre deosebire de oamenii de știință, care studiază natura și fenomenele naturale pentru a stabili principii, axiome și teoreme, inginerii aplică principiile teoretice din matematică, fizică și chimie pentru a crea un produs concret, ca de exemplu un rulment sau o tastatură de telefon." 
+    },
+    
+    {
+        "word": "persoană cu o pregătire tehnică - teoretică și practică, obținută într-un institut de învățământ superior, care practică ingineria. Spre deosebire de oamenii de știință, care studiază natura și fenomenele naturale pentru a stabili principii, axiome și teoreme, inginerii aplică principiile teoretice din matematică, fizică și chimie pentru a crea un produs concret, ca de exemplu un rulment sau o tastatură de telefon.",
+        "explication": "mașină-unealtă folosită pentru prelucrarea suprafețelor de revoluție, a suprafețelor plane frontale, a suprafețelor elicoidale - filete, în care piesa de prelucrat execută mișcarea principală de rotație, iar scula execută mișcările de avans rectilinii. Scula așchietoare este un cuțit de strung. Utilizând diferite tipuri de scule se pot efectua și alte operații, ca de exemplu găurire, adâncire cu adâncitor, alezare cu alezor, filetare cu tarod sau filieră, zimțuire, rectificare etc." 
+    },
+    
+    {
+        "word": "Batiu ",
+        "explication": "construcție de oțel sau de fontă pe care se montează mecanismele unui sistem tehnic stabil și prin intermediul căreia acesta se poate fixa pe o fundație, pe un teren etc." 
+    },
+    
+    {
+        "word": "Freza ",
+        "explication": "este o unealtă așchietoare, cu unul sau cu mai multe tăișuri, dispuse simetric în jurul unui ax și având o mișcare de rotație, folosită la prelucrarea unor materiale dure ca metal, lemn, os ș.a." 
+    },
+    
+    {
+        "word": "Poanson ",
+        "explication": "unealtă construită dintr-o tijă de oțel sau de alt metal dur, de formă conică, triunghiulară etc., cu vârful gravat în relief, care servește la perforarea sau la marcarea prin presare a unor obiecte de metal, la confecționarea unor matrițe, la baterea medaliilor etc." 
     }
+    
 ]

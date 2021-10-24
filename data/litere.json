@@ -1,0 +1,113 @@
+[
+    
+    {
+        "word": "Lingvistica ",
+        "explication": "stiință care studiază limba și legile ei de dezvoltare" 
+    },
+    
+    {
+        "word": "Lingvistică generala",
+        "explication": "domeniu al lingvisticii care studiază limba din punctul de vedere al trăsăturilor ei generale, de mijloc de comunicare specific omului" 
+    },
+    
+    {
+        "word": "Lingvistică diacronică",
+        "explication": "studiu al faptelor de limbă privite în evoluția lor. Lingvistică sincronică = studiu al faptelor de limbă așa cum se prezintă ele la un moment" 
+    },
+    
+    {
+        "word": "Acceptabilitate",
+        "explication": "noţiunea de acceptabilitate se referă la receptor, reprezintă unul din standardele textualităţii şi se conformează sistemului şi CŢ, în detrimentul CS. Se află în relaţie de reciprocitate cu noţiunea de intenţionalitate. Un text coeziv şi coerent trebuie acceptat ca atare pentru a putea fi utilizat în procesul interactiv al comunicării. În lingvistica aplicată, noţiunea de acceptabilitate depinde de diverşi factori, dintre care cel mai important este cel gramatical. Există diferite grade de acceptabilitate a unui text sau a unui enunţ." 
+    },
+    
+    {
+        "word": "Adaos ",
+        "explication": "trecerea de la implicit la explicit, dar are şi accepţia, mai răspândită, de surplus de informaţie, de explicitare a elipselor ori de inserţie gramaticală obligatorie" 
+    },
+    
+    {
+        "word": "Aluzie ",
+        "explication": "sintagmă sau frază în care este menţionată o idee, amintit un gând sau un eveniment, în scopul de a sugera indirect un eveniment similar de care este legat, cu care semnifică, care îl completează etc." 
+    },
+    
+    {
+        "word": "Ambiguitate ",
+        "explication": "intervine atunci când contextul verbal este insuficient pentru a conferi cuvintelor un sens, o semnificaţie contextuală univocă. " 
+    },
+    
+    {
+        "word": "Anafora ",
+        "explication": "procedeu retoric constând în repetarea unui cuvânt/grup de cuvinte la începutul unor enunţuri succesive pentru a reliefa expresia repetată, ceea ce produce o emfază, o exagerare prin procedeul amplificării ritmice." 
+    },
+    
+    {
+        "word": "Autor ",
+        "explication": "termenul este folosit pentru a desemna producătorul (emiţătorul) unui text, discurs sau enunţ ce va fi supus sau nu unui transfer interlingvistic şi cultural. Autorul produce un text care vehiculează un sens sau mai multe sensuri, un mesaj care îmbracă o anumită formă. Atât autorul cât şi TS sunt determinaţi de o serie de factori lingvistici şi extralingvistici, factori care marchează şi construirea sensului." 
+    },
+    
+    {
+        "word": "Barbarism ",
+        "explication": "in sens general, greşeală de limbă comisă de un străin. Este o eroare lexicală ce constă în crearea unor cuvinte noi sau în alterarea unora existente sub influenţa unei alte limbi." 
+    },
+    
+    {
+        "word": "Bilingvism ",
+        "explication": "se referă la indivizii care vorbesc efectiv două limbi, cel puţin pe parcursul unui anumit timp şi, folosind una dintre ele, se lasă influenţaţi de cealaltă." 
+    },
+    
+    {
+        "word": "Calitatea textului-tinta",
+        "explication": "pentru a asigura calitatea TŢ, traducătorul privilegiază, după necesităţi, sursa, finalitatea, forma ori destinatarul. Codul unei bune traduceri pragmatico-utilitare va privilegia întotdeauna utilitatea (funcţie a finalităţii) în dauna fidelităţii, deoarece un TŢ bine tradus înseamnă, în cazul traducerii textelor neliterare, un text în care adaptarea s-a realizat în funcţie de cerinţele şi aşteptările cititorului." 
+    },
+    
+    {
+        "word": "Camp semantic",
+        "explication": "nsamblul unităţilor lexicale (semne lingvistice) care denotă concepte înrudite, guvernate la rândul lor de un singur concept (un hiperonim). De exemplu câmpul semantic al cuvântului fruct: lămâie, portocală, măr, mură, prună etc." 
+    },
+    
+    {
+        "word": "Catafora ",
+        "explication": "principiu general al lingvisticii enunţiative, opus anaforei, dar cu care, în strânsă legătură, asigură corelaţia. Procedeu care constă în a anunţa printr-un fragment de discurs, un element cataforic (înlocuitor, substitut) o parte a contextului ce urmează a fi introdus." 
+    },
+    
+    
+    {
+        "word": "Intentia traducatorului",
+        "explication": "rezultatul cognitiv şi emoţional pe care traducătorul îl produce asupra cititorului său prezumtiv. Acest rezultat poate fi similar celui scontat de autor sau poate fi, involuntar sau nu, modificat de traducător, în funcţie de condiţiile de receptare a TŢ." 
+    },
+    
+    {
+        "word": "Intentionalitate ",
+        "explication": "noţiunea, care se referă la emiţător, întâi la autor, apoi la traducător, ca emiţător de gradul doi, se află în relaţie de complementaritate, de reciprocitate cu noţiunea de acceptabilitate şi presupune că un text coeziv şi coerent trebuie creat în mod intenţionat pentru a putea fi utilizat în procesul interactiv al comunicării. Echivalenţele literală, lingvistică şi semantică, favorizează intenţionalitatea TS şi sunt dictate de natura textului." 
+    },
+    
+    {
+        "word": "Interpret ",
+        "explication": "persoană calificată să asigure traducerea orală, interpretarea, a unui discurs emis oral, înregistrat sau a unui text scris destinat comunicării orale." 
+    },
+    
+    {
+        "word": "Memorie de traducere",
+        "explication": "aplicaţie care înregistrează într-o bază de date numită memorie de traducere, frazele ori segmentele-ţintă traduse (denumite unităţi sau segmente de traducere) şi segmentele-sursă corespunzătoare. Pentru fiecare nouă unitate de tradus, programul efectuează o cercetare în baza de date astfel constituită, pentru a verifica dacă un segment similar ori identic a fost tradus şi pentru a se asigura în acest fel omogenitatea terminologică şi stilistică a traducerii." 
+    },
+    
+    {
+        "word": "Metafora",
+        "explication": "metafora este o deviere a sensului prin similaritatea semnificaţilor celor două elemente asociate care au cel puţin un sem comun; ea înlocuieşte un semnificant cu altul." 
+    },
+    
+    {
+        "word": "Metafora ",
+        "explication": "deviere a sensului prin similaritatea semnificaţilor celor două elemente asociate care au cel puţin un sem comun; ea înlocuieşte un semnificant cu altul" 
+    },
+    
+    {
+        "word": "Paratext ",
+        "explication": "cuprinde orice complement informaţional adăugat de autor – paratextul auctorial format din peritext, epitextul public şi epitextul particular – sau de editor – paratextul editorial – situat în exteriorul textului."
+    },
+
+    {
+        "word": "Semantism",
+        "explication": "termenul are două accepţii. Prima, care interesează în perspectiva traductologică, se referă la conţinutul semantic al unei unităţi lingvistice, morfem sau enunţ. Semantismul desemnează însă şi etapa prealabilă asocierii unui sens unei forme date într-un context. "
+    }
+]

@@ -1,35 +1,110 @@
 [
 
     {
-        "word": "Drept subiectiv",
-        "explication": "Facultate sau prerogativa recunoscuta de lege persoanei, subiect activ al raportului juridic, de a pretinde subiectului (sau subiectelor) pasive sa savarseasca o anumita actiune sau sa se abtina de la savarsirea unei actiuni, putand recurge, la nevoie, la forta de constrangere a statului pentru asigurarea infaptuirii conduitei pretinse" 
+        "word": "Drept " ,
+        "explication": "noțiunea juridică de Drept reprezintă totalitatea regulilor și normelor juridice care reglementează conduita oamenilor în relațiile sociale, într-o colectivitate politic determinată, susceptibile de a fi impuse prin forța coercitivă a statului. Tot prin Drept este desemnată și știința care studiază aceste reguli și norme juridice." 
+    },
+
+    
+    {
+        "word": "Drept obiectiv" ,
+        "explication": "ansamblul tuturor normelor juridice cuprinse în acte normative care reglementează raporturile sociale și care pot să fie sau să nu mai fie în vigoare. Orice lege dată pentru a reglementa conduita umană face parte din dreptul obiectiv. Dreptul obiectiv (norma agendi) este alcătuit din: dreptul pozitiv (totalitatea normelor juridice aflate în vigoare pe teritoriul unui stat și nu numai - a se vedea în cest sens dreptul Uniunii Europene, un drept pozitiv sui generis) și din dreptul negativ (totalitatea normelor juridice ieșite din vigore)." 
+    },
+    
+    {
+        "word": "Drept subiectiv" ,
+        "explication": "prerogativă a subiectului de drept de a acţiona într-un anume fel şi de a pretinde o anumită conduită din partea celorlalte subiecte, folosind la nevoie forţa de constrângere a statului" 
+    },
+    
+    {
+        "word": "Constitutie " ,
+        "explication": "legea fundamentală a unui stat în care sunt consemnate principiile de bază ale organizării lui, drepturile și îndatoririle fundamentale ale cetățenilor." 
+    },
+    
+    {
+        "word": "Tipuri de legi" ,
+        "explication": "Parlamentul adopta 3 tipuri de legi : constitutionale, organice si ordinare." 
+    },
+    
+    {
+        "word": "Lege organica" ,
+        "explication": "reglementează un număr limitat de aspecte importante privind statul. Printre domeniile rezervate legii organice se numără sistemul electoral, funcționarea partidelor politice, organizarea referendumului, starea de asediu și starea de urgență, legislația privind raporturile de muncă, statutul minorităților. " 
+    },
+    
+    {
+        "word": "Lege ordinara" ,
+        "explication": "orice lege care nu se incadreaza in domeniile prevazute expres pentru legea organica " 
+    },
+    
+    {
+        "word": "Ordonanta de urgenta" ,
+        "explication": "act normativ emis de Guvern în situații extraordinare a căror reglementare nu poate fi amânată. Acest tip de act normativ constituie o formă prin care puterii executive din România (guvernului) i se atribuie drept legislativ, în speță acelea de a da legi, pe care în mod normal doar parlamentul are dreptul sa le adopte." 
+    },
+    
+    {
+        "word": "Ramura de drept" ,
+        "explication": "grupare mai larga de norme si institutii juridice care sunt legate intre ele prin obiectul lor comun (un anumit complex de relatii sociale pe care le reglementeaza), prin anumite principii comune care stau la baza lor, precum si prin unitatea de metoda folosita in reglementarea relatiilor sociale respective, potrivit intereselor din societatea respectiva." 
+    },
+    
+    {
+        "word": "Drept penal" ,
+        "explication": "ramură a sistemului de drept, alcătuit din totalitatea normelor juridice legiferate de puterea legislativă, care stabilesc ce fapte constituie infracțiuni, condițiile răspunderii penale, sancțiunile și alte măsuri ce urmează a fi aplicate sau luate de către instanțele de judecată persoanelor care au săvârșit infracțiuni, în scopul apărării celor mai importante valori sociale ale statului de drept." 
+    },
+    
+    {
+        "word": "Drept civil" ,
+        "explication": "ramură de drept ce reglementează relațiile social-patrimoniale și nepatrimoniale stabilite între persoane fizice și/sau juridice ce se află pe poziții de egalitate juridică, chiar când una dintre părți este statul (ca persoană privată și nu ca autoritate publică)." 
+    },
+    
+    {
+        "word": "Drept material" ,
+        "explication": "stabilește drepturile și obligațiile părților în cauză." 
+    },
+    
+    {
+        "word": "Drept procesual" ,
+        "explication": "specifică practica, procedura și mecanismele de impunere a drepturilor și îndatoririlor." 
+    },
+    
+    {
+        "word": "Nulitate " ,
+        "explication": "sancţiune civilă care constă în desfiinţarea retroactivă a unui act juridic încheiat cu încălcarea dispoziţiilor legale." 
+    },
+    
+    {
+        "word": "Nulitate absoluta" ,
+        "explication": "sancţionează nerespectarea, la încheierea actului juridic civil, a unei norme juridice care ocroteşte un interes general, deci a unei norme juridice imperative de ordine publică, desigur, care instituie o condiţie de validitate pentru încheierea actului juridic." 
+    },
+    
+    {
+        "word": "Nulitate relativa" ,
+        "explication": "sancţionează nerespectarea, la încheierea actului juridic civil, a unei norme juridice care ocroteşte un interes individual (particular), deci a unei norme juridice imperative de ordine privată, care instituie o condiţie de validitate pentru încheierea actului juridic." 
+    },
+    
+    {
+        "word": "Actio libera in causa" ,
+        "explication": "situaţia în care, la momentul comiterii acţiunii autorul nu era responsabil, dar la un moment anterior, când a fost responsabil, a provocat în mod intenţionat sau din culpă cauza viitoarei sale iresponsabilităţi." 
+    },
+    
+    {
+        "word": "Legitima aparare" ,
+        "explication": "se află în legitimă apărare, acela care săvârşeşte fapta pentru a înlătura un atac material, direct, imediat şi injust, îndreptat împotriva sa sau a unui interes obştesc şi care pune în pericol grav persoana sau drepturile celui atacat ori interesul obştesc." 
+    },
+    
+    {
+        "word": "Stare de necesitate" ,
+        "explication": "cauză generală care înlătură caracterul penal al faptei constând în existenţa unui pericol iminent care, neputând fi înlăturat altfel, constrânge o persoană să comită o faptă prevăzută de legea penală, pentru a salva astfel, de la acel pericol, viaţa, integritatea corporală sau sănătatea sa, a altuia sau un bun important al său ori al altuia sau un interes public." 
+    },
+    
+    {
+        "word": "Actiune de partaj " ,
+        "explication": "acţiune civilă prin care se pune capăt stării de coproprietate sau stării de indivi-ziune şi care constă în împărţirea materială a bunului sau bunurilor comune între coproprietari (sau coindivizari), fiecare dintre aceştia devenind proprietar exclusiv asupra unei părţi determinate ori asupra unui bun din acelea care se aflau în coproprietate." 
     },
 
     {
-        "word": "Drept obiectiv",
-        "explication": "Dreptul obiectiv desemnează totalitatea regulilor juridice de conduită sau anormelor juridice din societate. El reprezintă totalitatea normelor de conduită instituite deorganele statului şi impuse indivizilor sau colectivităţii în cadrul vieţii sociale, uneori chiarprin forţa de constrângere a statului."
-    },
-
-    {
-        "word": "Ramură de drept",
-        "explication": "O grupare mai larga de norme si institutii juridice care sunt legate intre ele prin obiectul lor comun (un anumit complex de relatii sociale pe care le reglementeaza), prin anumite principii comune care stau la baza lor, precum si prin unitatea de metoda folosita in reglementarea relatiilor sociale respective, potrivit intereselor din societatea respectiva."
-    },
-
-    {
-        "word": "Constituția",
-        "explication": "Este legea fundamentală a unui stat în care sunt consemnate principiile de bază ale organizării lui, drepturile și îndatoririle fundamentale ale cetățenilor."
-    },
-
-    {
-        "word": "Act Normativ",
-        "explication": "Este izvorul de drept creat de organe ale autorităţii publice, investite cu competenţe normative (parlament, guvern, organe administrative locale). Actul normativ cuprinde norme general-obligatorii, a căror aplicare poate fi realizată şi prin intervenţia forţei coercitive a statului (De ex.: legi, decrete, ordonanţe ale guvernului, regulamente şi ordine ale ministerelor, decizii ale organelor administrative locale)."
-    },
-
-    {
-        "word": "Cod Penal",
-        "explication": "Este actul normativ care reunește normele ce constituie dreptul comun în materia dreptului penal. Este un ansamblu al principalelor norme juridice care definesc infracțiunile și stabilesc sancționarea lor."
+        "word": "Aberratio ictus",
+        "explication": "expresie folosită pentru a denumi una dintre cauzele care generează infracţiunea deviată. Se are în vedere ipoteza în care datorită unei mânuiri greşite a mijloacelor de comitere a infracţiunii, s-a deviat acţiunea către alt obiect, obţinându-se un alt rezultat decât acela urmărit de autor. Autorul acestui comportament va răspunde penal pentru infracţiunea comisă, latura subiectivă fiind identică cu cea de la care s-a deviat."
     }
-
 ]
 
 
