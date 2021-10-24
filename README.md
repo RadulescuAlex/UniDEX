@@ -37,7 +37,7 @@
 - Run Xampp -> Start Apache & MySQL
 - Go to browser -> localhost -> phpMyAdmin
 - Create new db & name it "expert-info" (utf8_general_ci)
-- Go to "import" tab -> select expert_info.sql from project folder -> expert
+- Go to "import" tab -> select expert_info.sql from project folder.
 - Open terminal -> npm install 
 
 ## Running app
