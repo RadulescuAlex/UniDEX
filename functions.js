@@ -31,7 +31,10 @@ let allWords = [];
 let domain = "drept";
 
 function loadWords(query, domain) {
-  const url =  location.host === "radulescualex.github.io" ? `data/${domain}.json` : API.READ.URL
+  const url =
+    location.host === "radulescualex.github.io"
+      ? `data/${domain}.json`
+      : API.READ.URL;
   fetch(
     url +
       "?" +
@@ -57,7 +60,6 @@ function getWordsAsHTML(words) {
             <span class="distanta">${word.explication}</span>
             <span class="buttons">
             <span><a id="explication" href="#" class="delete-btn" data-id="${word.id}">&#10006;</a></span>
-            <span><a href="#" class="edit-btn" data-id="${word.id}">&#9998;</a></span>
             </div>`;
     })
     .join("");
@@ -83,8 +85,8 @@ document.querySelector("#top-menu-bar").addEventListener("click", (e) => {
     const id = e.target.getAttribute("data-page");
     initMenu(id);
     domain = e.target.getAttribute("data-page");
-        console.log("butonul apasat este: ", domain);
-        loadWords("", domain);
+    console.log("butonul apasat este: ", domain);
+    loadWords("", domain);
   }
 });
 
@@ -163,10 +165,9 @@ function makeModal() {
   };
 }
 
-initMenu(domain)
+initMenu(domain);
 makeModal();
 loadWords("", domain);
-
 
 document.querySelector("#results").addEventListener("click", (e) => {
   if (e.target.matches("a.delete-btn")) {
