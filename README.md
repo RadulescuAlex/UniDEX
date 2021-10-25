@@ -28,7 +28,7 @@
     - Open modal to add data
 
 ## Dependency
-- git clone https://github.com/RadulescuAlex/node-api
+- git clone https://github.com/RadulescuAlex/node-api-expert
 - npm install
 
 ## Setup
