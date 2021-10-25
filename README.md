@@ -27,6 +27,10 @@
     - Search words
     - Open modal to add data
 
+## Dependency
+- git clone https://github.com/RadulescuAlex/node-api
+- npm install
+
 ## Setup
 
 - git clone https://github.com/RadulescuAlex/UniDEX
@@ -41,7 +45,7 @@
 - Open terminal -> npm install 
 
 ## Running app
-- npm run devstart 
+- npm run devstart - on api
 - Open http://localhost3001/
 
 
