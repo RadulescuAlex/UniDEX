@@ -51,22 +51,31 @@ function loadWords(query, domain) {
     });
 }
 
-function getWordsAsHTML(words) {
+function highlight (text, search) {
+  return search ? text.replaceAll(search, m => {
+    return `<span class="highlight">${m}</span>`;
+  }) : text;
+}
+
+function getWordsAsHTML(words, search) {
   return words
     .map((word) => {
       return `<div class="inLine">
-            <span>${word.word}</span>
+            <span>${highlight(word.word, search)}</span>
             = 
-            <span class="distanta">${word.explication}</span>
+            <span class="distanta">${highlight(word.explication, search)}</span>
             <span class="buttons">
-            <span><a id="explication" href="#" class="delete-btn" data-id="${word.id}">&#10006;</a></span>
+              <span><a href="#" class="delete-btn" data-id="${word.id}">&#10006;</a></span>
+            </span>  
             </div>`;
     })
     .join("");
 }
 
 function displayWords(words) {
-  const html = getWordsAsHTML(words);
+  const search = document.getElementById("search").value;
+  console.info(search)
+  const html = getWordsAsHTML(words, search ? new RegExp(search, 'gi') : 0 );
 
   document.getElementById("results").innerHTML = html;
 }

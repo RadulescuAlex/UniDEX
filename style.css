@@ -4,6 +4,7 @@
   background-position: center;
   min-height: 500px;
   padding-left: 15px;
+  padding-right: 17px;
   font-size: 18px;
 }
 
@@ -151,4 +152,22 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.highlight {
+  background-color: yellowgreen;
+}
+
+.delete-btn {
+  text-decoration: none;
+  display: none;
+  padding-left: 10px;
+}
+
+.inLine:hover  .delete-btn, .delete-btn:hover {
+  display: inline-block ;
+}
+
+.inLine {
+ border-bottom: 1px solid #e8e8e8 ;
 }
