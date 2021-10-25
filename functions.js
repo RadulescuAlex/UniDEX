@@ -28,8 +28,12 @@ if (location.host === "radulescualex.github.io") {
 }
 
 let allWords = [];
-let domain = "drept";
+let domain = localStorage.getItem('domain');
 
+function setDomain(nextDomain) {
+  domain = nextDomain
+  localStorage.setItem('domain', domain )
+}
 function loadWords(query, domain) {
   const url =
     location.host === "radulescualex.github.io"
@@ -93,7 +97,7 @@ document.querySelector("#top-menu-bar").addEventListener("click", (e) => {
   if (e.target.matches("a")) {
     const id = e.target.getAttribute("data-page");
     initMenu(id);
-    domain = e.target.getAttribute("data-page");
+    setDomain(e.target.getAttribute("data-page")); 
     console.log("butonul apasat este: ", domain);
     loadWords("", domain);
   }
