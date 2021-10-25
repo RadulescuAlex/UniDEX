@@ -107,7 +107,8 @@
 }
 
 .inLine {
-  margin-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8 ;
+  padding: 5px 0  ;
 }
 
 .distanta {
@@ -166,8 +167,4 @@ body {
 
 .inLine:hover  .delete-btn, .delete-btn:hover {
   display: inline-block ;
-}
-
-.inLine {
- border-bottom: 1px solid #e8e8e8 ;
 }
