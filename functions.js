@@ -28,7 +28,7 @@ if (location.host === "radulescualex.github.io") {
 }
 
 let allWords = [];
-let domain = localStorage.getItem('domain');
+let domain = localStorage.getItem('domain') || "drept";
 
 function setDomain(nextDomain) {
   domain = nextDomain
